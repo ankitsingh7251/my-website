@@ -41,7 +41,7 @@ const About: React.FC = () => {
 
                 <div className='h-[100%] md:w-[48%] flex flex-col  justify-center'>
                     <h2 className='md:text-[2vw] font-bold text-baseColor  text-[5vw]'><u><Bounce>My Skills</Bounce></u></h2>
-                    <Fade>   <p className='md:text-[1.3vw]'>I specialize in HTML, CSS, JavaScript, React.js, Next.js, TailwindCSS, and Redux Toolkit, which allow me to create responsive, dynamic, and scalable web applications. My expertise in these technologies ensures that I can handle everything from building sleek user interfaces to optimizing performance and managing state efficiently. Whether it's coding from scratch or enhancing existing websites, I take pride in delivering quality code and seamless experiences.</p></Fade>
+                    <Fade>   <p className='md:text-[1.3vw]'>I specialize in HTML, CSS, JavaScript, React.js, Next.js, TailwindCSS, and Redux Toolkit, which allow me to create responsive, dynamic, and scalable web applications. My expertise in these technologies ensures that I can handle everything from building sleek user interfaces to optimizing performance and managing state efficiently. Whether it&apos;s coding from scratch or enhancing existing websites, I take pride in delivering quality code and seamless experiences.</p></Fade>
                 </div>
                 <div className='h-[100%] md:w-[48%] flex rounded-3xl overflow-hidden '>
                     <Image
