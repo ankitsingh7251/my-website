@@ -1,0 +1,192 @@
+:root {
+  --background: #f5f5f5; /* Example background color */
+  --foreground: #333; /* Example foreground color */
+  --baseWhite: #ffffff;
+  --baseBlack: #000000;
+  --baseGray: gray;
+  --baseColor: #40e0d0;
+}
+
+.project-container {
+  padding: 2rem 5vw;
+  color: var(--foreground);
+}
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--baseColor);
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  /* font-size: 1.75rem; */
+  font-weight: 600;
+  color: var(--baseColor);
+  margin-bottom: 1rem;
+}
+
+.section-content,
+.tech-list li,
+.features-list li,
+.challenges-list li,
+.learning-outcomes-list li,
+.future-enhancements-list li {
+  font-size: 1.2vw;
+  color: var(--baseWhite);
+}
+
+.tech-list,
+.features-list,
+.challenges-list,
+.learning-outcomes-list,
+.future-enhancements-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.images-section {
+  margin-bottom: 3rem;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.image-wrapper {
+  position: relative;
+  height: 16rem;
+}
+
+.image {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.final-message {
+  font-size: 1.125rem;
+  color: var(--baseWhite);
+  margin-bottom: 1rem;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link {
+  color: var(--baseColor);
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+.Project_image_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.Project_image_box_1 {
+  width: 32%;
+  height: 40vh;
+  object-fit: cover;
+}
+.Project_image_box_1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .project-title {
+    font-size: 2.5rem;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .section-content,
+  .tech-list li,
+  .features-list li,
+  .challenges-list li,
+  .learning-outcomes-list li,
+  .future-enhancements-list li {
+    font-size: 1.25rem;
+  }
+
+  .images-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-wrapper {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-title {
+    font-size: 3rem;
+  }
+
+  .section-heading {
+    font-size: 2.25rem;
+  }
+
+  .section-content,
+  .tech-list li,
+  .features-list li,
+  .challenges-list li,
+  .learning-outcomes-list li,
+  .future-enhancements-list li {
+    font-size: 1.375rem;
+  }
+
+  .images-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image-wrapper {
+    height: 24rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project-title {
+    font-size: 3.5rem;
+  }
+
+  .section-heading {
+    font-size: 2.5rem;
+  }
+
+  .section-content,
+  .tech-list li,
+  .features-list li,
+  .challenges-list li,
+  .learning-outcomes-list li,
+  .future-enhancements-list li {
+    font-size: 1.5rem;
+  }
+
+  .images-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image-wrapper {
+    height: 28rem;
+  }
+}
