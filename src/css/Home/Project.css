@@ -110,83 +110,20 @@
   border-radius: 0.5rem;
 }
 
-@media (min-width: 768px) {
-  .project-title {
-    font-size: 2.5rem;
-  }
-
-  .section-heading {
-    font-size: 2rem;
-  }
-
+@media (max-width: 768px) {
   .section-content,
   .tech-list li,
   .features-list li,
   .challenges-list li,
   .learning-outcomes-list li,
   .future-enhancements-list li {
-    font-size: 1.25rem;
+    font-size: 5vw;
+    color: var(--baseWhite);
   }
-
-  .images-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .Project_image_box {
+    flex-direction: column;
   }
-
-  .image-wrapper {
-    height: 20rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .project-title {
-    font-size: 3rem;
-  }
-
-  .section-heading {
-    font-size: 2.25rem;
-  }
-
-  .section-content,
-  .tech-list li,
-  .features-list li,
-  .challenges-list li,
-  .learning-outcomes-list li,
-  .future-enhancements-list li {
-    font-size: 1.375rem;
-  }
-
-  .images-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .image-wrapper {
-    height: 24rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .project-title {
-    font-size: 3.5rem;
-  }
-
-  .section-heading {
-    font-size: 2.5rem;
-  }
-
-  .section-content,
-  .tech-list li,
-  .features-list li,
-  .challenges-list li,
-  .learning-outcomes-list li,
-  .future-enhancements-list li {
-    font-size: 1.5rem;
-  }
-
-  .images-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .image-wrapper {
-    height: 28rem;
+  .Project_image_box_1 {
+    width: 100%;
   }
 }

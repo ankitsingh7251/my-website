@@ -37,7 +37,6 @@ const AboutUs = () => {
                         <img
                             src={whoIAm}
                             alt="Who I Am"
-
                         />
                     </div>
                 </div>
@@ -55,7 +54,7 @@ const AboutUs = () => {
                             </p>
                         </Fade>
                     </div>
-                    <div className='About_container_img1'>
+                    <div className='About_container_img2'>
                         <img
                             src={mySkils}
                             alt="My Skills"
@@ -102,11 +101,11 @@ const AboutUs = () => {
                             </p>
                         </Fade>
                     </div>
-                    <div className='About_container_img1'>
+                    <div className='About_container_img2'>
                         <img
                             src={fron_end}
                             alt="Front-End Development"
-                           
+
                         />
                     </div>
                 </div>
@@ -116,7 +115,7 @@ const AboutUs = () => {
                         <img
                             src={continueimg}
                             alt="Continuous Learning"
-                           
+
                         />
                     </div>
                     <div className='About_Details_box'>
@@ -133,7 +132,7 @@ const AboutUs = () => {
                         <img
                             src={continueimg}
                             alt="Continuous Learning"
-                           
+
                         />
                     </div>
                 </div>
