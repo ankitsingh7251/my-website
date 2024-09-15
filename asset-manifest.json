@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-website/static/css/main.b2c264d7.css",
+    "main.js": "/my-website/static/js/main.45693d41.js",
+    "static/js/453.ed3810f9.chunk.js": "/my-website/static/js/453.ed3810f9.chunk.js",
+    "static/media/herobackgroundGif.gif": "/my-website/static/media/herobackgroundGif.29b9dd8a8c51388afcf7.gif",
+    "static/media/ecomHome.png": "/my-website/static/media/ecomHome.e5c0ee9c78ce8e147277.png",
+    "static/media/who_i_am.webp": "/my-website/static/media/who_i_am.e2c802c8578ebf759d29.webp",
+    "static/media/ecomProduct.png": "/my-website/static/media/ecomProduct.0f316ae8902331389d07.png",
+    "static/media/logo.jpg": "/my-website/static/media/logo.47f9c3ede213d00a4368.jpg",
+    "static/media/ecomCart.png": "/my-website/static/media/ecomCart.d5553dca913fda1db73c.png",
+    "static/media/myapproach.jpg": "/my-website/static/media/myapproach.5d3618792efd1734a34a.jpg",
+    "static/media/myskils.webp": "/my-website/static/media/myskils.6e0798860c79bb50ea43.webp",
+    "static/media/continue.webp": "/my-website/static/media/continue.07cc867ae8b88fa30f43.webp",
+    "static/media/Front-End.webp": "/my-website/static/media/Front-End.4fd9e1295d8ee7070670.webp",
+    "index.html": "/my-website/index.html",
+    "main.b2c264d7.css.map": "/my-website/static/css/main.b2c264d7.css.map",
+    "main.45693d41.js.map": "/my-website/static/js/main.45693d41.js.map",
+    "453.ed3810f9.chunk.js.map": "/my-website/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2c264d7.css",
+    "static/js/main.45693d41.js"
+  ]
+}
