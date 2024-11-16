@@ -35,11 +35,11 @@ const Header: React.FC = () => {
         };
     }, [scrollPosition]);
 
-    const positionStyle = scrollingDown ? { position: 'fixed' } : { position: 'absolute' };
+    const positionStyle = scrollingDown ? { position: 'fixed' } : null;
 
     return (
         <div 
-            className={`flex items-center justify-between px-4 z-20 md:px-14 py-2 border-b-[0.1rem] border-baseGray w-[100vw] ${scroll ? 'bg-black' : ''}`}
+            className={`flex items-center justify-between px-4 z-20 md:px-14 py-2 border-b-[0.1rem] border-baseGray w-[100%] ${scroll ? 'bg-black' : ''}`}
             style={positionStyle} 
         >
             <Image
