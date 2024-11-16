@@ -1,27 +1,75 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 import logo from '@/Assets/images/logo.jpg'
-
-
+import Link from 'next/link';
 
 const Header: React.FC = () => {
+    const [scrollingDown, setScrollingDown] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            // Check if scrolling down or up
+            if (currentScrollY > scrollPosition) {
+                setScrollingDown(!true); // Scrolling down
+            } else {
+                setScrollingDown(!false); 
+            }
+
+            setScrollPosition(currentScrollY);
+
+            if (currentScrollY > 100) {
+                setScroll(true); 
+            } else {
+                setScroll(false); 
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrollPosition]);
+
+    // Dynamic position style based on scroll direction
+    const positionStyle = scrollingDown ? { position: 'fixed' } : { position: 'absolute' };
 
     return (
-        <>
-            <div className='flex items-center justify-between px-4 md:px-14 py-2 border-b-[0.1rem] border-baseGray'>
-                <Image
-                    src={logo}
-                    alt='dfd'
-                    className=' h-[7vh] w-[7vh] object-contain rounded-full'></Image>
-                <ul className='flex md:gap-9 gap-3'>
-                    <li className='cursor-pointer md:text-[1.2vw] hover:text-baseColor'>HOME</li>
-                    <li className='cursor-pointer md:text-[1.2vw] hover:text-baseColor'>ABOUT US</li>
-                    <li className='cursor-pointer md:text-[1.2vw] hover:text-baseColor'>PROJECT</li>
-                    {/* <li className='cursor-pointer md:text-[1.2vw] hover:text-baseColor'>CONTACT</li> */}
-                </ul>
-            </div>
-        </>
-    )
+        <div 
+            className={`flex items-center justify-between px-4 z-20 md:px-14 py-2 border-b-[0.1rem] border-baseGray w-[100vw] ${scroll ? 'bg-black' : ''}`}
+            style={positionStyle}  // Apply dynamic position style
+        >
+            <Image
+                src={logo}
+                alt='Logo'
+                className='h-[7vh] w-[7vh] object-contain rounded-full'
+            />
+            <ul className='flex md:gap-9 gap-3'>
+                <li className='cursor-pointer md:text-[1.2vw] hover:text-baseColor text-[1.6vh]'>
+                    <Link href="/#home">
+                        HOME
+                    </Link>
+                </li>
+
+                <li className='cursor-pointer md:text-[1.2vw] hover:text-baseColor text-[1.6vh]'>
+                    <Link href="/#about">
+                        ABOUT US
+                    </Link>
+                </li>
+                <li className='cursor-pointer md:text-[1.2vw] hover:text-baseColor text-[1.6vh]'>
+                    <Link href="/#project">
+                        PROJECT
+                    </Link>
+                </li>
+            </ul>
+        </div>
+    );
 }
 
-export default Header
+export default Header;

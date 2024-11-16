@@ -6,7 +6,7 @@ import ecomCart from '@/Assets/images/ecomCart.png'
 
 const Project: React.FC = () => {
     return (
-        <div className='py-8 px-4 md:px-14 '>
+        <div className='py-8 px-4 md:px-14 ' id='project'>
             <h1 className='md:text-4xl font-bold  text-baseColor mb-8'><u>E-Commerce Website</u></h1>
 
             <section className='mb-12'>

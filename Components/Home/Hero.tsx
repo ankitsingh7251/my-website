@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useTypewriter } from 'react-simple-typewriter'
-import { JackInTheBox, Bounce } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const Hero: React.FC = () => {
 
@@ -14,14 +14,12 @@ const Hero: React.FC = () => {
     })
     return (
         <>
-            <div className=' text-baseGray md:h-[90vh] h-[60vh] flex items-center justify-center relative herobackground'>
+            <div className=' text-baseGray md:h-[100vh] h-[50vh] flex items-center justify-center relative herobackground' id='home'>
                 <div className='text-center '>
-                    <Bounce >
-                        <h1 className='md:text-[4.5vw] font-bold text-baseColor'>ANKIT SINGH</h1>
-                    </Bounce>
-                    <JackInTheBox>
-                        <p className='md:text-[3.5vw]  '>{typeEffect}</p>
-                    </JackInTheBox>
+                    <h1 className='md:text-[4.5vw] text-[7vw] font-bold text-baseColor'>ANKIT SINGH</h1>
+                    <Fade>
+                        <p className='md:text-[3.5vw] text-[6vw]  '>{typeEffect}</p>
+                    </Fade>
 
                 </div>
 
