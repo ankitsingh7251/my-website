@@ -35,13 +35,12 @@ const Header: React.FC = () => {
         };
     }, [scrollPosition]);
 
-    // Dynamic position style based on scroll direction
     const positionStyle = scrollingDown ? { position: 'fixed' } : { position: 'absolute' };
 
     return (
         <div 
             className={`flex items-center justify-between px-4 z-20 md:px-14 py-2 border-b-[0.1rem] border-baseGray w-[100vw] ${scroll ? 'bg-black' : ''}`}
-            style={positionStyle}  // Apply dynamic position style
+            style={positionStyle} 
         >
             <Image
                 src={logo}
