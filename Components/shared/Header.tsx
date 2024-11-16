@@ -13,9 +13,8 @@ const Header: React.FC = () => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            // Check if scrolling down or up
             if (currentScrollY > scrollPosition) {
-                setScrollingDown(!true); // Scrolling down
+                setScrollingDown(!true); 
             } else {
                 setScrollingDown(!false); 
             }
@@ -31,7 +30,6 @@ const Header: React.FC = () => {
 
         window.addEventListener('scroll', handleScroll);
 
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
